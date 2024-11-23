@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout Styles */
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 30%;
+            background-color: #2a2a2a;
+            padding: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 1.8em;
+            color: #9b59b6;
+        }
+
+        .sidebar p {
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .sidebar .contact-info {
+            margin-top: 20px;
+        }
+
+        .sidebar .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Main Content */
+        .main-content {
+            width: 70%;
+            background-color: #1a1a1a;
+            padding: 20px;
+        }
+
+        /* Main Content Boxes */
+        .main-content .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Add space between boxes */
+            margin-bottom: 20px;
+        }
+
+        .main-content .box {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 48%; /* Adjust for two side-by-side boxes */
+            text-align: left;
+        }
+
+        .main-content .box h2 {
+            color: #9b59b6;
+        }
+
+        .skills, .interests {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .skills h2, .interests h2 {
+            color: #9b59b6;
+        }
+
+        /* Skills Section */
+        .skill-bar {
+            margin: 10px 0;
+        }
+
+        .skill-bar span {
+            display: block;
+            background-color: #444;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skill-bar span .progress {
+            display: block;
+            height: 10px;
+            background-color: #3498db;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <h1>Antonio Pereira</h1>
+          <h2 class="subtitle">Estudante de Ciência da computação</h2>
+          
+          <div class="about">
+              <h3>Sobre mim</h3>
+              <p>
+                Opa! Meu nome é Antonio, e eu sou um estudante em busca de café e respostas na área de Ciência da Computação. Desde que comecei a faculdade, percebi que a vida é um grande algoritmo cheio de bugs, e a minha missão é tentar não causar um loop infinito nas minhas escolhas. No momento, meu principal foco é sobreviver às provas e aos trabalhos em grupo.
+              </p>
+          </div>
+          
+          <div class="contact-info">
+              <h3>Informação de contato</h3>
+              <p>Email: <a href="mailto:youremail@example.com">euoantonioso@gmail.com</a></p>
+              <p>Telefone: (27) 988819229</p>
+              <p>Github: github.com/6OfSpades</p>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="main-content">
+            <!-- Row with Experience and Education -->
+            <div class="row">
+                <div class="box">
+                    <h2><i class="fa fa-briefcase"></i> Experience</h2>
+                    <p><strong>Posição:</strong> Estudante</p>
+                    <p><strong>Faculdade:</strong> Estácio</p>
+                    <p><strong>Duração:</strong> 2024 - Presente</p>
+                </div>
+                <div class="box">
+                    <h2><i class="fa fa-graduation-cap"></i> Formação</h2>
+                    <p><strong>Posição:</strong> Estudante</p>
+                    <p><strong>Faculdade:</strong> Estácio</p>
+                    <p><strong>Duração:</strong> 2024 - Presente</p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills">
+                <h2><i class="fa fa-cogs"></i> Habilidades</h2>
+                <div class="skill-bar">
+                    <p>HTML</p>
+                    <span><span class="progress" style="width: 70%;"></span></span>
+                </div>
+                <div class="skill-bar">
+                    <p>CSS</p>
+                    <span><span class="progress" style="width: 65%;"></span></span>
+                </div>
+                <div class="skill-bar">
+                    <p>JavaScript</p>
+                    <span><span class="progress" style="width: 40%;"></span></span>
+                </div>
+                <div class="skill-bar">
+                  <p>Python</p>
+                  <span><span class="progress" style="width: 70%;"></span></span>
+              </div>
+            </div>
+
+            <!-- Languages Section -->
+            <div class="languages">
+              <h2><i class="fa fa-language"></i> Idiomas</h2>
+              <div class="language-circles">
+                  <!-- Portuguese -->
+                  <div class="circle" data-percent="99">
+                      <div class="inner-circle">
+                          <p>Português</p>
+                          <p>99%</p>
+                      </div>
+                  </div>
+                  <!-- English -->
+                  <div class="circle" data-percent="95">
+                      <div class="inner-circle">
+                          <p>Inglês</p>
+                          <p>95%</p>
+                      </div>
+                  </div>
+                  <!-- French -->
+                  <div class="circle" data-percent="20">
+                    <div class="inner-circle">
+                        <p>Francês</p>
+                        <p>20%</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interests Section -->
+            <div class="interests">
+              <h2><i class="fa fa-star"></i> Interesses</h2>
+              <div class="interests-icons">
+                  <div class="interest-item">
+                      <i class="fa fa-code"></i>
+                      <p>Programação</p>
+                  </div>
+                  <div class="interest-item">
+                      <i class="fa fa-music"></i>
+                      <p>Música</p>
+                  </div>
+                  <div class="interest-item">
+                      <i class="fa fa-paint-brush"></i>
+                      <p>Arte</p>
+                  </div>
+                  <div class="interest-item">
+                      <i class="fa fa-gamepad"></i>
+                      <p>Games</p>
+                  </div>
+                  <div class="interest-item">
+                    <i class="fa fa-book"></i>
+                    <p>Livros</p>
+                </div>
+              </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

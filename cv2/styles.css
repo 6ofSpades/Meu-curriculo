@@ -1,0 +1,197 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1px; 
+}
+
+
+.sidebar {
+  width: 30%;
+  background-color: #2a2a2a;
+  padding: 20px;
+  text-align: left; 
+}
+
+/* Name and Subtitle */
+.sidebar h1 {
+  font-size: 1.8em;
+  color: #9b59b6;
+  margin-bottom: 5px;
+}
+
+.sidebar h2.subtitle {
+  font-size: 1.2em;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+/* About Section */
+.sidebar .about h3 {
+  font-size: 1.2em;
+  color: #9b59b6;
+  margin-bottom: 10px;
+}
+
+.sidebar .about p {
+  line-height: 1.6;
+  margin: 0 0 15px;
+  color: #e0e0e0;
+}
+
+/* Contact Information Section */
+.sidebar .contact-info h3 {
+  font-size: 1.2em;
+  color: #9b59b6;
+  margin-bottom: 10px;
+}
+
+.sidebar .contact-info p {
+  margin: 5px 0;
+}
+
+.sidebar .contact-info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.sidebar .contact-info a:hover {
+  text-decoration: underline;
+}
+
+.profile-picture {
+  text-align: center; /* Center the image in the sidebar */
+  margin-bottom: 15px; 
+}
+
+.profile-picture img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 2px solid #3498db; 
+}
+
+
+/* Languages Section */
+.languages {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.languages h2 {
+  color: #9b59b6;
+  margin-bottom: 20px;
+}
+
+.language-circles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: conic-gradient(#444 0% 100%); /* Default empty circle */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  width: 80px;
+  height: 80px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #e0e0e0;
+  font-size: 0.8em;
+}
+
+.inner-circle p:first-child {
+  margin: 0;
+  font-weight: bold;
+}
+
+.inner-circle p:last-child {
+  margin: 0;
+  font-size: 1.2em;
+  color: #3498db;
+}
+
+.interests {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.interests-icons i {
+  font-size: 5em;
+  margin: 10px;
+  color: #3498db;
+}
+
+.interests h2 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.interests-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.interest-item {
+  text-align: center;
+  margin: 10px;
+}
+
+.interest-item i {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: #3498db;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+.interest-item i:hover {
+  transform: scale(1.2); 
+  color: #9b59b6; /* Changes the color on hover */
+}
+
+.interest-item p {
+  font-size: 1em;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.box, .skills, .languages, .interests {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 0px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.box:hover, .skills:hover, .languages:hover, .interests:hover {
+  transform: translateY(-1px); /* Makes the box appear to pop up */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+/* Align Box Titles to the Left */
+.box h2, .skills h2, .languages h2, .interests h2 {
+  text-align: left; 
+  margin-top: 0px; 
+  margin-bottom: 25px; 
+  color: #9b59b6; /* Keep the existing title color */
+}
